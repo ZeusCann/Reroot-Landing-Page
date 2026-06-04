@@ -1,4 +1,4 @@
-import './navbar.css'
+import './Navbar.css'
 
 function Navbar() {
   //const [isOpen, setIsOpen] = useState(false)
@@ -13,7 +13,7 @@ function Navbar() {
           <li><a href="#features">Features</a></li>
           <li><a href="#how-it-works">How it works</a></li>
           <li><a href="#faith">Faith</a></li>
-          <li><a href="#join-waitlist" className="join-button">Join waitlist</a></li>
+          <li><button type="button" className="join-button">Join waitlist</button></li>
         </ul>
       </div>
     </nav>
