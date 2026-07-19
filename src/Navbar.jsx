@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="nav-brand">
-        <h1>Freed</h1>
+        <h1>Reroot</h1>
       </div>
       <div className="nav-menu" id="navbarNav">
         <ul>

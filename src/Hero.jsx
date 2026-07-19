@@ -27,20 +27,41 @@ function Hero() {
             <h1 className="hero-title">
                 Break Free. 
                 <br />
-                Stay <span>Freed</span>.
+                Stay <span className="freed">Freed</span>.
             </h1>
             <p className="hero-subtext">
                A science-backed, faith-friendly app that helps anyone break free from <br/>pornography — with streaks, an AI coach, and a community that gets it. 
             </p>
 
-            <div className="hero-form">
-            <input type="email"className={`hero-input ${hasError ? 'hero-input-error' : ''}`} 
-            placeholder="Enter your email..." 
-            value={email} 
-            onChange={(event) => setEmail(event.target.value)} />
-            <button type="button"className="join-waitlist-btn" onClick={handleJoinWaitlist}>Join the waitlist</button>
+            <div className="hero-signup">
+                <div className="hero-form">
+                <input type="email"className={`hero-input ${hasError ? 'hero-input-error' : ''}`} 
+                placeholder="Enter your email..." 
+                value={email} 
+                onChange={(event) => setEmail(event.target.value)} />
+                <button type="button"className="join-waitlist-btn" onClick={handleJoinWaitlist}>Join the waitlist</button>
+                </div>
+
+                <p className="hero-note">Free to join. No spam. Ever.</p>
+
+                <div className="hero-stats">
+                    <div className="hero-stat">
+                        <strong>Free</strong>
+                        <span>To join the waitlist</span>
+                    </div>
+
+                    <div className="hero-stat">
+                        <strong>Faith-friendly</strong>
+                        <span>Optional, never forced</span>
+                    </div>
+
+                    <div className="hero-stat">
+                        <strong>100%</strong>
+                        <span>Anonymous &amp; Private</span>
+                    </div>
+                </div>
+
             </div>
-            <p className="hero-note">Free to join. No spam. Ever.</p>
         </section>
     )
 }
